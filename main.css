@@ -1,0 +1,97 @@
+body {
+    background: url(assets/logist-fon2.png) 50% 0 / cover no-repeat fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Nav-bar */
+.nav-bar {
+    height: 100px;      /* Delete */
+}
+
+
+/* Header (below nav-bar) */
+
+header {
+    background: url(assets/header-background.jpg) 50% 0 / auto auto repeat-y fixed;
+    position: relative;
+}
+
+header > .black-overlay {
+    background: url(assets/overlay-black.png) no-repeat;
+    background-position: 0 top;
+}
+
+header > .black-overlay > .container {
+    color: #ed1c24;
+    font-size: 28pt;
+    font-weight: bold;
+    padding-top: 130px;
+    text-shadow: 0px 0px 5px #000, 0px 0px 2px #000;
+}
+
+
+.sub-nav-bar-wrapper {
+    padding: 16px 0 16px 0;
+}
+
+.sub-nav-bar {
+    background: url(assets/subnavbar-bg.png) no-repeat;
+    padding: 18px 0;
+}
+
+.sub-nav-bar > .container {
+    color: white;
+    line-height: 24px;
+}
+
+
+
+/* Content */
+
+.content-wrapper {
+    padding: 30px 0;
+    padding-bottom: 10px;
+}
+.content-wrapper:last-child {
+    padding-bottom: 30px;
+}
+
+.content-wrapper > .container {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.content {
+    padding: 24px;
+    text-align: center;
+}
+
+.content-header-wrapper {
+    padding-bottom: 30px;
+}
+
+.content-header {
+    border-bottom: 2px solid #ed1c24;
+    display: inline-block;
+    font-size: 24pt;
+    font-weight: bold;
+    padding: 0 8px 8px 8px;
+}
+
+/* Main content (in the .content div; below content-header) */
+
+.content-filling {
+
+}
+
+
+
+/* Common classes */
+
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1100px;
+}
