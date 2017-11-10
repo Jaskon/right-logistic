@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: url(assets/logist-fon2.png) 50% 0 / cover no-repeat fixed;
     margin: 0;
