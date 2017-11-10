@@ -16,6 +16,7 @@ body {
 header {
     background: url(assets/header-background.jpg) 50% 0 / auto auto repeat-y fixed;
     position: relative;
+    width: 100%;
 }
 
 header > .black-overlay {
@@ -91,7 +92,8 @@ header > .black-overlay > .container {
 
 .container {
     margin: auto;
+    max-width: 1100px;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1100px;
+    width: 100%;
 }
