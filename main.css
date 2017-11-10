@@ -10,9 +10,88 @@ body {
 
 
 /* Nav-bar */
-.nav-bar {
-    height: 100px;      /* Delete */
+
+.nav-bar-wrapper {
+    
 }
+
+/* Nav-bar header (contacts) */
+
+.nav-bar-header {
+    background-color: #f3f5f4;
+}
+
+.nav-bar-header > .container {
+    padding-left: 265px;
+}
+
+.nav-bar-header-element {
+    display: inline-block;
+    font-size: 11pt;
+    padding: 10px 14px;
+}
+
+/* Nav-bar and logo */
+
+.nav-bar {
+    background-color: rgba(237,28,36,0.8);
+    padding: 0;
+}
+.nav-bar:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-bar-logo-wrapper {
+    background-color: #f3f5f4;
+    display: inline-block;
+    float: left;
+    padding: 0 20px;
+    position: relative;
+}
+.nav-bar-logo-wrapper:before {
+    border: 25px solid #f3f5f4;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    content: "";
+    left: -50px;
+    position: absolute;
+    top: 0;
+}
+.nav-bar-logo-wrapper:after {
+    border: 25px solid #f3f5f4;
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    content: "";
+    position: absolute;
+    right: -50px;
+    top: 0;
+}
+
+.nav-bar-logo-wrapper > img {
+    /* To prevent white space below the image (alternative: font-size: 0) */
+    display: block;
+    margin-top: -17px;
+}
+
+/* Nav-bar items */
+
+.nav-bar-items-wrapper {
+
+}
+
+.nav-bar-item {
+    color: white;
+    display: inline-block;
+    font-size: 16pt;
+    padding: 20px 18px;
+    text-decoration: none;
+}
+.nav-bar-item:first-child {
+    margin-left: 66px;
+}
+
 
 
 /* Header (below nav-bar) */
@@ -84,7 +163,7 @@ header > .black-overlay > .container {
     padding: 0 8px 8px 8px;
 }
 
-/* Main content (in the .content div; below content-header) */
+/* Main content (in the .content div; below the content-header) */
 
 .content-filling {
 
