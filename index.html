@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="content.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
-    <script src="main.js"></script>
 </head>
 <body>
 
@@ -31,9 +30,9 @@
                     </a>
                     <!-- Nav-bar itself -->
                     <div class="nav-bar-items-wrapper">
-                        <a class="nav-bar-item" href="glavnaya">Главная</a>
-                        <a class="nav-bar-item" href="index.html">О компании</a>
-                        <a class="nav-bar-item" href="kontakty">Контакты</a>
+                        <a class="nav-bar-item" href="main.html">Главная</a>
+                        <a class="nav-bar-item active" href="index.html">О компании</a>
+                        <a class="nav-bar-item" href="contacts.html">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -43,11 +42,47 @@
                 <div class="container">О КОМПАНИИ</div>
                 <div class="sub-nav-bar-wrapper">
                     <div class="sub-nav-bar">
-                        <div class="container">asdf</div>
+                        <div class="container">
+                            asdf <span class="sub-nav-bar-separate-symbol">»</span> fdsa
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- Modal windows -->
+
+        <!-- Phone-call -->
+        <div id="phoneCall" class="modal phone-call-wrapper">
+            <div class="phone-call-header">Заказать<br>звонок</div>
+            <input id="phoneName" class="phone-input" type="text" value="" placeholder="Имя">
+            <input id="phoneNumber" class="phone-input" type="text" value="" placeholder="Телефон">
+            <input id="phoneTime" class="phone-input" type="text" value="" placeholder="Время звонка">
+            <button class="phone-input button"
+                    onclick="phoneCall(phoneName.value, phoneNumber.value, phoneTime.value)">OK</button>
+        </div>
+
+        <!-- Chat -->
+        <div id="chat" class="modal chat-wrapper">
+            <div class="chat-flex-wrapper">
+                <div>Настоящий чат! (Нет)</div>
+                <div id="chatMessages" class="chat-messages-wrapper phone-input">
+                    <div class="chat-message">Author1: asdfasdf</div>
+                    <div class="chat-message">Anonymous: fasdasfasfasfasaaaaaaaaaaaaaaaaaaaaaa asdasf asf</div>
+                </div>
+                <input id="myMessage" class="phone-input" type="text" value="" placeholder="Сообщение">
+                <button class="button phone-input" onclick="sendMessage(myMessage.value)">Отправить</button>
+            </div>
+        </div>
+
+
+        <!-- Advanced buttons -->
+        <div class="phone-button" onclick="openPhone()"></div>
+
+        <div class="chat-button" onclick="openChat()"></div>
+
+        <div class="gray-clickable-background" onclick="closeModals()"></div>
     </header>
 
 
@@ -150,6 +185,11 @@
             </div>
         </div>
     </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
 
 </body>
 </html>

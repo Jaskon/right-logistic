@@ -67,18 +67,29 @@
 /* Nav-bar items */
 
 .nav-bar-items-wrapper {
-
+    font-size: 0;
 }
 
 .nav-bar-item {
     color: white;
     display: inline-block;
     font-size: 16pt;
-    padding: 20px 18px;
+    padding: 20px 28px;
     text-decoration: none;
 }
 .nav-bar-item:first-child {
     margin-left: 66px;
+}
+
+.nav-bar-item.active {
+    border-bottom: 3px solid #aaa;
+    border-top: 3px solid #aaa;
+}
+
+.nav-bar-item:hover {
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    color: black;
 }
 
 
@@ -117,4 +128,172 @@
 .sub-nav-bar > .container {
     color: white;
     line-height: 24px;
+}
+
+.sub-nav-bar-separate-symbol {
+    color: #727272;
+    font-size: 10pt;
+    vertical-align: middle;
+}
+
+
+
+/* Advanced buttons */
+
+.phone-button {
+    background: url(assets/mini-phone.png) 50% 50% / 26px no-repeat;
+    background-color: #5cb85c;
+    bottom: 40px;
+    border: 1px solid #4cae4c;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+    right: 120px;
+    width: 50px;
+}
+.phone-button:hover {
+    background-color: #449d44;
+}
+.phone-button:active {
+    background-color: #398439;
+}
+
+.chat-button {
+    background: url(assets/mini-chat.png) 50% 50% / 30px no-repeat;
+    background-color: #5cb85c;
+    bottom: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    width: 50px;
+}
+.chat-button:hover {
+    background-color: #449d44;
+}
+.chat-button:active {
+    background-color: #398439;
+}
+
+.gray-clickable-background {
+    background-color: #000000;
+    display: none;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    transition: opacity .4s;
+    width: 100%;
+    z-index: 9998;
+}
+
+.gray-clickable-background.show {
+    opacity: .45;
+}
+
+
+
+/* Modal windows */
+
+.modal {
+    display: none;
+    margin-top: -100px;
+    opacity: 0;
+    position: fixed;
+    transition: .3s;
+    z-index: 9999;
+}
+
+.modal.show {
+    margin-top: 0;
+    opacity: 1;
+}
+
+.phone-call-wrapper {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    left: 100px;
+    padding: 8px 20px;
+    text-align: center;
+    top: 100px;
+    z-index: 9999;
+}
+
+.phone-call-header {
+    color: #ed1c24;
+    font-family: sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+    line-height: 18pt;
+    margin-top: 6px;
+}
+
+.phone-input {
+    border: 1px solid black;
+    border-radius: 4px;
+    display: block;
+    margin-top: 14px;
+    padding: 8px;
+    width: 100%;
+}
+.phone-input:last-child {
+    margin-bottom: 14px;
+}
+
+.chat-wrapper {
+    background-color: #f3f5f4;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 100%;
+    max-width: 240px;
+    max-height: 320px;
+    right: 100px;
+    padding: 10px 18px;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+}
+
+.chat-flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.chat-messages-wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column-reverse;
+    min-height: 0px;
+    overflow-y: auto;
+    text-align: initial;
+}
+
+.chat-message {
+    word-wrap: break-word;
+    margin-top: 10px;
+}
+
+
+
+/* Common classes */
+
+.display {
+    display: block;
+}
+
+.button {
+    background-color: #5cb85c;
+    border: 1px solid #4cae4c;
+    color: white;
+}
+.button:hover {
+    background-color: #449d44;
+}
+.button:active {
+    background-color: #398439;
 }
