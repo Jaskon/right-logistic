@@ -34,3 +34,18 @@
 .content-body {
 
 }
+.content-body:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.content-img {
+    float: left;
+    max-width: 500px;
+    width: 100%;
+}
+
+.content-img.right {
+    float: right;
+}

@@ -75,7 +75,6 @@
     display: inline-block;
     font-size: 16pt;
     padding: 20px 28px;
-    text-decoration: none;
 }
 .nav-bar-item:first-child {
     margin-left: 66px;

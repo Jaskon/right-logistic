@@ -33,13 +33,13 @@
 }
 
 .footer-item-body {
-    font-size: 13pt;
-    line-height: 26px;
+    font-size: 12pt;
+    line-height: 21px;
 }
 
 .footer-bottom-line {
     background-color: red;
     height: 3px;
-    margin: 60px auto 10px auto;
+    margin: 90px auto 30px auto;
     width: 110px;
 }

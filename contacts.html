@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>rlog.by</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="content.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="nav-bar-wrapper">
+            <!-- Contacts -->
+            <div class="nav-bar-header">
+                <div class="container">
+                    <div class="nav-bar-header-element">+375 (29) 123 45 67</div>
+                    <div class="nav-bar-header-element">+375 (33) 987 65 43</div>
+                    <div class="nav-bar-header-element">info@rlog.by</div>
+                </div>
+            </div>
+            
+            <div class="nav-bar">
+                <div class="container">
+                    <!-- Logo image -->
+                    <a class="nav-bar-logo-wrapper" href="index.html">
+                        <img src="assets/logo-rl.png">
+                    </a>
+                    <!-- Nav-bar itself -->
+                    <div class="nav-bar-items-wrapper">
+                        <a class="nav-bar-item" href="main.html">Главная</a>
+                        <a class="nav-bar-item active" href="index.html">О компании</a>
+                        <a class="nav-bar-item" href="contacts.html">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="black-overlay">
+                <div class="container">О КОМПАНИИ</div>
+                <div class="sub-nav-bar-wrapper">
+                    <div class="sub-nav-bar">
+                        <div class="container">
+                            <!-- Sub-nav-bar -->
+                            <a href="main.html">Главная</a> <span class="sub-nav-bar-separate-symbol">»</span> О компании
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal windows -->
+
+        <!-- Phone-call -->
+        <div id="phoneCall" class="modal phone-call-wrapper">
+            <div class="phone-call-header">Заказать<br>звонок</div>
+            <input id="phoneName" class="phone-input" type="text" value="" placeholder="Имя">
+            <input id="phoneNumber" class="phone-input" type="text" value="" placeholder="Телефон">
+            <input id="phoneTime" class="phone-input" type="text" value="" placeholder="Время звонка">
+            <button class="phone-input button"
+                    onclick="phoneCall(phoneName.value, phoneNumber.value, phoneTime.value)">OK</button>
+        </div>
+
+        <!-- Chat -->
+        <div id="chat" class="modal chat-wrapper">
+            <div class="chat-flex-wrapper">
+                <div>Настоящий чат! (Нет)</div>
+                <div id="chatMessages" class="chat-messages-wrapper phone-input">
+                    <div class="chat-message">Author1: asdfasdf</div>
+                    <div class="chat-message">Anonymous: fasdasfasfasfasaaaaaaaaaaaaaaaaaaaaaa asdasf asf</div>
+                </div>
+                <input id="myMessage" class="phone-input" type="text" value="" placeholder="Сообщение">
+                <button class="button phone-input" onclick="sendMessage(myMessage.value)">Отправить</button>
+            </div>
+        </div>
+
+
+        <!-- Advanced buttons -->
+        <div class="phone-button" onclick="openPhone()"></div>
+
+        <div class="chat-button" onclick="openChat()"></div>
+
+        <div class="gray-clickable-background" onclick="closeModals()"></div>
+    </header>
+
+
+
+
+    <!-- CONTENT -->
+
+    <content>
+        <div>
+            <div class="content-wrapper">
+                <div class="container">
+                    <div class="content">
+
+                        <div class="content-header-wrapper">
+                            <div class="content-header">О НАС</div>
+                        </div>
+
+                        <div class="content-body">
+                            <img class="content-img right" src="assets/content/2.jpg">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </content>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+
+                <div class="footer-items-wrapper">
+
+                    <!-- Footer columns -->
+
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            Звоните нам
+                        </div>
+                        <div class="footer-item-body">
+                            Телефон/факс: 8 0152 69 60 68
+                            <br>
+                            МТС: +375 33 349 92 11  
+                            <br>
+                            Velcom: +375 29 6 177 087
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            Адрес
+                        </div>
+                        <div class="footer-item-body">
+                            Юридический адрес: 231712, Республика Беларусь, 
+                            Гродненский район, д. Индура, ул.Рогачевского, д. 57
+                            <br> 
+                            Почтовый адрес: 230027, г. Гродно, ул.О.Соломовой,118А,к.12
+                        </div>
+                    </div>
+
+                    <div class="footer-item">
+                        <div class="footer-item-header">
+                            Пишите нам
+                        </div>
+                        <div class="footer-item-body">
+                            info@rlog.by
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer-bottom-line"></div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+
+</body>
+</html>
