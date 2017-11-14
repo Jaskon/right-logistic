@@ -86,8 +86,6 @@
 }
 
 .nav-bar-item:hover {
-    border-bottom: 3px solid black;
-    border-top: 3px solid black;
     color: black;
 }
 

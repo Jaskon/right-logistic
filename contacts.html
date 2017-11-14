@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>rlog.by</title>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="header.css">
@@ -31,20 +32,20 @@
                     <!-- Nav-bar itself -->
                     <div class="nav-bar-items-wrapper">
                         <a class="nav-bar-item" href="main.html">Главная</a>
-                        <a class="nav-bar-item active" href="index.html">О компании</a>
-                        <a class="nav-bar-item" href="contacts.html">Контакты</a>
+                        <a class="nav-bar-item" href="index.html">О компании</a>
+                        <a class="nav-bar-item active" href="contacts.html">Контакты</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="header">
             <div class="black-overlay">
-                <div class="container">О КОМПАНИИ</div>
+                <div class="container">Контакты</div>
                 <div class="sub-nav-bar-wrapper">
                     <div class="sub-nav-bar">
                         <div class="container">
                             <!-- Sub-nav-bar -->
-                            <a href="main.html">Главная</a> <span class="sub-nav-bar-separate-symbol">»</span> О компании
+                            <a href="main.html">Главная</a> <span class="sub-nav-bar-separate-symbol">»</span> Контакты
                         </div>
                     </div>
                 </div>
@@ -98,11 +99,59 @@
                     <div class="content">
 
                         <div class="content-header-wrapper">
-                            <div class="content-header">О НАС</div>
+                            <div class="content-header">Информация о нас</div>
                         </div>
 
                         <div class="content-body">
                             <img class="content-img right" src="assets/content/2.jpg">
+
+                            <div class="content-contacts-elem-wrapper">
+                                <div class="content-contacts-elem-header">Главный офис</div>
+                                <div class="content-contacts-elem-body">ЮРИДИЧЕСКИЙ АДРЕС: 231712, Республика Беларусь, Гродненский район, д. Индура, ул. Рогачевского, д. 57, комната 4 <br>
+                                ПОЧТОВЫЙ АДРЕС: 230027, г. Гродно, ул.О.Соломовой, 118А,к.12</div>
+                            </div>
+
+                            <div class="content-contacts-elem-wrapper">
+                                <div class="content-contacts-elem-header">Адреса складских помещений:</div>
+                                <div class="content-contacts-elem-body">г. Гродно, ул.Хвойная, 1</div>
+                            </div>
+
+                            <div class="content-contacts-elem-wrapper">
+                                <div class="content-contacts-elem-header">Телефоны</div>
+                                <div class="content-contacts-elem-body">Телефон/факс: 8 0152 69 60 68 <br>
+                                МТС:+375 33 349 92 11 <br>
+                                Velcom:+375 29 6 177 087</div>
+                            </div>
+
+                            <div class="content-contacts-elem-wrapper">
+                                <div class="content-contacts-elem-header">Электронная почта:</div>
+                                <div class="content-contacts-elem-body">info@rlog.by</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="container">
+                    <div class="content">
+
+                        <div class="content-header-wrapper">
+                            <div class="content-header">Отправить нам сообщение</div>
+                        </div>
+
+                        <div class="content-body">
+                            <form class="content-message-form">
+                                <div class="content-message-inputs-wrapper">       <!-- Wrapper for styles -->
+                                    <input class="content-message-input" type="text" name="name" placeholder="Ваше имя *" required>
+                                    <input class="content-message-input" type="email" name="email" placeholder="Email *" required>
+                                    <input class="content-message-input" type="text" name="phone" placeholder="Телефон">
+                                </div>
+                                <textarea class="content-message-textarea" name="text" placeholder="Сообщение *" required></textarea>
+
+                                <input class="content-message-button" type="submit" value="Отправить">
+                            </form>
                         </div>
 
                     </div>
