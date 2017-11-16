@@ -16,6 +16,11 @@
     padding: 24px;
     text-align: center;
 }
+.content:after {
+    clear: both;
+    content: "";
+    display: block;
+}
 
 .content-header-wrapper {
     padding-bottom: 30px;
@@ -34,10 +39,19 @@
 .content-body {
 
 }
-.content-body:after {
-    clear: both;
-    content: "";
-    display: block;
+
+.content-body > ul {
+    columns: 2;
+    line-height: 12pt;
+    list-style-type: none;
+    padding-left: 0;
+}
+.content-body > ul > li {
+    margin-bottom: 10px;
+}
+.content-body > ul > li:before {
+    color: red;
+    content: "~ ";
 }
 
 .content-img {
@@ -48,6 +62,7 @@
 
 .content-img.right {
     float: right;
+    margin-left: 30px;
 }
 
 /* Contacts page */
